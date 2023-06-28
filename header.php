@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Allowishus</title>
@@ -15,7 +15,7 @@
         <div class="container">
             <div class="header__top-wrapper">
                 <div class="header__top">
-                    <a href="#" class="logo"><img src="images/logo.png" alt="logo" class="logo__img"></a>
+                    <a href="#" class="logo"><img src="<?php bloginfo('template_erl')?>/assets/imageslogo.png" alt="logo" class="logo__img"></a>
     
                     <nav class="menu">
                         <button class="menu__btn">
@@ -31,7 +31,7 @@
                         </ul>
                     </nav>
     
-                    <button class="cart__btn"><img src="icons/cart.svg" alt="basket" class="cart__btn-img"></button>
+                    <button class="cart__btn"><img src="<?php bloginfo('template_url')?>/assets/icons/cart.svg" alt="basket" class="cart__btn-img"></button>
                     <a href="#" class="vouchers__link black-btn">Buy gift vouchers</a>
                 </div>
             </div>
@@ -39,7 +39,7 @@
 
             <section class="promo">
                 <div class="promo__info">
-                    <h1 class="promo__title">Alowishus Delicious Coffee <span> <img src="images/promo/award-small.png" alt="" class="promo__title-img"></span> </h1>
+                    <h1 class="promo__title">Alowishus Delicious Coffee <span> <img src="<?php bloginfo('template_url')?>/assets/images/promo/award-small.png" alt="" class="promo__title-img"></span> </h1>
                     <p class="promo__descr">A drink from the ‘My Alowishus’ bottled brews range OR grab one of our delicious coffee’s.</p>
                     <div class="promo__buttons">
                         <a href="#" class="promo__btn">Download App</a>
@@ -47,16 +47,16 @@
                     </div>
                 </div>
                 <div class="promo__media">
-                    <img src="images/promo/award.png" alt="img" class="promo__award">
-                    <img src="images/promo/main-bg.png" alt="promo" class="promo__main-img">
+                    <img src="<?php bloginfo('template_url')?>/assets/images/promo/award.png" alt="img" class="promo__award">
+                    <img src="<?php bloginfo('template_url')?>/assets/images/promo/main-bg.png" alt="promo" class="promo__main-img">
                     <div class="promo__rating">
                         <div class="promo__rating-star">
                             <ul class="star__list">
-                                <li class="star__list-item"><img src="icons/star.svg" alt="" class="star__list-img"></li>
-                                <li class="star__list-item"><img src="icons/star.svg" alt="" class="star__list-img"></li>
-                                <li class="star__list-item"><img src="icons/star.svg" alt="" class="star__list-img"></li>
-                                <li class="star__list-item"><img src="icons/star.svg" alt="" class="star__list-img"></li>
-                                <li class="star__list-item"><img src="icons/star.svg" alt="" class="star__list-img"></li>
+                                <li class="star__list-item"><img src="<?php bloginfo('template_url')?>/assets/icons/star.svg" alt="" class="star__list-img"></li>
+                                <li class="star__list-item"><img src="<?php bloginfo('template_url')?>/assets/icons/star.svg" alt="" class="star__list-img"></li>
+                                <li class="star__list-item"><img src="<?php bloginfo('template_url')?>/assets/icons/star.svg" alt="" class="star__list-img"></li>
+                                <li class="star__list-item"><img src="<?php bloginfo('template_url')?>/assets/icons/star.svg" alt="" class="star__list-img"></li>
+                                <li class="star__list-item"><img src="<?php bloginfo('template_url')?>/assets/icons/star.svg" alt="" class="star__list-img"></li>
                             </ul>
                         </div>
                         <div class="promo__rating-descr">4.9 out of 5 Overall Star Rating for All Local Business.</div>

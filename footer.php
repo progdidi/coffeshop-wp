@@ -3,7 +3,7 @@
         <div class="container">
             <div class="footer__content">
                 <div class="footer__about">
-                    <img src="images/footer/logo.png" alt="logo" class="footer__about-logo">
+                    <img src="<?php bloginfo('template_url')?>/assets/images/footer/logo.png" alt="logo" class="footer__about-logo">
                     <p class="footer__about-text">We made it our mission to create community everyday and grow meaningful, lasting relationships with our staff, our suppliers and of course you, our customers.</p>
 
                     <div class="footer__stores">
@@ -21,19 +21,19 @@
                         <ul class="social__list">
                             <li class="social__list-item">
                                 <a href="#" class="social__list-link">
-                                    <img src="images/footer/social/facebook.svg" alt="facebook" class="social__list-img"></a>
+                                    <img src="<?php bloginfo('template_url')?>/assets/images/footer/social/facebook.svg" alt="facebook" class="social__list-img"></a>
                             </li>
                             <li class="social__list-item">
                                 <a href="#" class="social__list-link">
-                                    <img src="images/footer/social/instagram.svg" alt="instagram" class="social__list-img"></a>
+                                    <img src="<?php bloginfo('template_url')?>/assets/images/footer/social/instagram.svg" alt="instagram" class="social__list-img"></a>
                             </li>
                             <li class="social__list-item">
                                 <a href="#" class="social__list-link">
-                                    <img src="images/footer/social/twitter.svg" alt="twitter" class="social__list-img"></a>
+                                    <img src="<?php bloginfo('template_url')?>/assets/images/footer/social/twitter.svg" alt="twitter" class="social__list-img"></a>
                             </li>
                             <li class="social__list-item">
                                 <a href="#" class="social__list-link">
-                                    <img src="images/footer/social/linkedin.svg" alt="linkedin" class="social__list-img"></a>
+                                    <img src="<?php bloginfo('template_url')?>/assets/images/footer/social/linkedin.svg" alt="linkedin" class="social__list-img"></a>
                             </li>
                         </ul>
                     </div>
@@ -55,6 +55,6 @@
         </div>
     </footer> 
 
-    <script src="js/main.min.js"></script>
+    <?php wp_footer(); ?>
 </body>
 </html>
