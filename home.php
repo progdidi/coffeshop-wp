@@ -62,28 +62,37 @@ Template Name: home
             <div class="best__items">
 
 
-            <?php		
+            <?php
                 global $post;
 
-                $query = new WP_Query( [
-                    'posts_per_page' => 5,
-                    'orderby'        => 'comment_count',
-                ] );
+                $myposts = get_posts([ 
+                    'numberposts' => -1
+                ]);
 
-                if ( $query->have_posts() ) {
-                    while ( $query->have_posts() ) {
-                        $query->the_post();
-            ?>
+                if( $myposts ){
+                    foreach( $myposts as $post ){
+                        setup_postdata( $post );
+		?>
 
                 <!-- Вывод постов, функции цикла: the_title() и т.д. -->
                 <div class="best__item wow animate__animated data-wow-duration="2s" data-wow-delay="0.5s"">
-                    <img src="<?php bloginfo('template_url')?>/assets/images/best/1.png" alt="top" class="best__item-img">
+                    
+                
+                    <?php the_post_thumbnail(
+                        array(206, 320),
+                        array(
+                            'class' => 'best__item-img'
+                        )
+
+                    ); ?>
+                    
+
                     <div class="best__item-info">
                         <div class="best__item-about">
                             <p class="best__item-top">#1 Selling</p>
-                            <h5 class="best__item-name">Double Espresso</h5>
+                            <h5 class="best__item-name"><?php the_title(); ?></h5>
                         </div> 
-                        <p class="best__item-descr">Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+                        <p class="best__item-descr"><?php the_content(); ?></p>
                         <div class="best__item-buy">
                             <p class="best__item-price">$59.99</p>
                             <a href="" class="best__item-btn black-btn">Order now</a>
